@@ -72,4 +72,8 @@ def condicionalesLetras(dedos, frame):
             cv2.rectangle(frame, (0, 0), (100, 100), (255, 255,255), -1)
             cv2.putText(frame, 'V', (20, 80), font, 3, (0,0,0),2,cv2.LINE_AA)
             print("V")
+    if dedos == [1, 1, 1, 1, 1, 1]:
+            cv2.rectangle(frame, (0, 0), (280, 100), (255, 255,255), -1)
+            cv2.putText(frame, 'HOLA', (20, 80), font, 3, (0,0,0),2,cv2.LINE_AA)
+            print("HOLA")
     return dedos
